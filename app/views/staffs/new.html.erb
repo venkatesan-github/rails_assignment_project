@@ -1,11 +1,11 @@
 <div class="jumbotron">
   <div class="container text-center">
-  <h1>Edit Employee</h1>
+  <h1>Create New Employee Data</h1>
   </div>
 </div>
 
 <%= render 'error_msg' %>
-<%= form_for @field do |f| %>
+<%= form_for @staff do |f| %>
   <div class="container">
     <div class="card">
       <div class="card-body">
@@ -30,14 +30,12 @@
           <%= f.text_field :designation, class:"form-control" %>
         </div>
   
-        <%= f.submit "Update Employee", class:"btn btn-primary btn-sm" %>
-        <%= link_to "Back", fields_path, class:"btn btn-secondary btn-sm" %>
+        <%= f.submit "Create Employee", class:"btn btn-primary btn-sm" %>
+        <%= link_to "Back", staffs_path, class:"btn btn-secondary btn-sm" %>
       </div>
     </div>
   </div>
           
 <% end %>
 
-
-
-
+<%= link_to "Back", staffs_path %>

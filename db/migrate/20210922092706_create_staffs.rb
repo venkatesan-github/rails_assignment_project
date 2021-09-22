@@ -1,11 +1,11 @@
-class CreateFields < ActiveRecord::Migration[6.1]
+class CreateStaffs < ActiveRecord::Migration[6.1]
   def change
-    create_table :fields do |t|
-
+    create_table :staffs do |t|
       t.string :name
       t.integer :age
       t.string :gender
-      t.text :designation
+      t.string :designation
+
       t.timestamps
     end
   end
